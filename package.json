@@ -6,10 +6,28 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/cors": "^1.4.1",
+    "@elysiajs/jwt": "^1.4.1",
+    "@prisma/adapter-libsql": "^7.6.0",
+    "@prisma/adapter-pg": "^7.6.0",
+    "@prisma/client": "^7.6.0",
+    "dotenv": "^17.4.0",
+    "elysia": "latest",
+    "elysia-xss": "^1.0.4",
+    "pg": "^8.20.0"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/bun": "latest",
+    "@types/node": "^25.5.2",
+    "@types/pg": "^8.20.0",
+    "bun-types": "latest",
+    "prisma": "^7.6.0",
+    "tsx": "^4.21.0"
   },
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "type": "module",
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^6.0.2"
+  }
 }
